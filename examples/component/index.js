@@ -15,7 +15,7 @@ class Example extends React.Component {
         options: {
           filter: false,
         }
-      },      
+      },
       {
         name: "Title",
         options: {
@@ -34,14 +34,14 @@ class Example extends React.Component {
                 change={event => updateValue(event)}
               />
             );
-          },         
+          },
         }
       },
       {
         name: "Age",
         options: {
           filter: false,
-          customBodyRender: value => value
+          customBodyRender: value => <span>{value}</span>
         }
       },
       {
